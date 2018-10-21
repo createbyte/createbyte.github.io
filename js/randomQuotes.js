@@ -1,6 +1,6 @@
 		function loadJSONData(){
 			//specify where we will be getting data from
-			var JDFrom = "https://talaikis.com/api/quotes/random/";
+			var JDFrom = "http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
 			// now make a http conection request to the remote server from where we are getting the above data in this case talaikis
 			//XMLHttpRequest is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. 
 			var httpReq = new XMLHttpRequest();
@@ -32,7 +32,7 @@
 				var JSObj = JSON.parse(httpReq.responseText);
 				//responseText is a property of xmlhttprequest which returns json
 				//alert(httpReq.responseText);
-				document.getElementById('JSONdata').innerHTML = JSObj.quote;
+				document.getElementById('JSONdata').innerHTML = JSObj.quoteText;
 			}
 
 
