@@ -1,5 +1,5 @@
 		function loadJSONData(){
-			var JDFrom = "https://geek-jokes.sameerkumar.website/api";
+			var JDFrom = "https://talaikis.com/api/quotes/random/";
 			var httpReq = new XMLHttpRequest();
 			try{
 				httpReq = new XMLHttpRequest();
