@@ -1,5 +1,5 @@
 		function loadJSONData(){
-			var JDFrom = "https://talaikis.com/api/quotes/random/";
+			var JDFrom = "https://jsonplaceholder.typicode.com/todos/1";
 			var httpReq = new XMLHttpRequest();
 			try{
 				httpReq = new XMLHttpRequest();
